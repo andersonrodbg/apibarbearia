@@ -16,7 +16,7 @@ public class AgendamentoService {
     private AgendamentoRepository repository;
 
     public Agendamento salvar(Agendamento agendamento) {
-        // Verifica se já existe agendamento no mesmo dia e hora
+        
         if (existeAgendamentoNoMesmoHorario(agendamento.getData(), agendamento.getHora())) {
             throw new RuntimeException("Já existe um agendamento para esse horário!");
         }
