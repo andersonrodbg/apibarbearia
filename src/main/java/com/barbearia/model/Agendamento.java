@@ -13,6 +13,7 @@ public class Agendamento {
     private Long id;
 
     private String nomeCliente;
+    private String servico;
     private String telefone;
     private LocalDate data;
     private LocalTime hora;
@@ -22,6 +23,7 @@ public class Agendamento {
 
     public Agendamento(String nomeCliente, String telefone, LocalDate data, LocalTime hora) {
         this.nomeCliente = nomeCliente;
+        this.servico = servico;
         this.telefone = telefone;
         this.data = data;
         this.hora = hora;
@@ -32,6 +34,9 @@ public class Agendamento {
 
     public String getNomeCliente() { return nomeCliente; }
     public void setNomeCliente(String nomeCliente) { this.nomeCliente = nomeCliente; }
+
+    public String getServico() {return servico;}
+    public void setServico(String servico){this.servico = servico; }
 
     public String getTelefone() { return telefone; }
     public void setTelefone(String telefone) { this.telefone = telefone; }
